@@ -13,7 +13,7 @@ public class servidor {
       Registry registro = LocateRegistry.createRegistry(1099); //puerto por defecto para trabajar con RMI es el 1099 (pero si esta ocupado se puede cambiar)
       registro.rebind("ClienteRemoto", objRemoto); //con ese nombre ("ClienteRemoto") es con el cual el cliente va a poder localizar el objeto remoto, asi que este mismo nombre 
       //hay que usarlo en el cliente para la busqueda del objeto remoto
-
+      //.
 
     } catch (Exception e) {
       e.printStackTrace();
